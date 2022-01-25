@@ -17,6 +17,7 @@
 		76116E1427A08A290041F6D4 /* flutterviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76116E1327A08A290041F6D4 /* flutterviewTests.m */; };
 		76116E1E27A08A290041F6D4 /* flutterviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76116E1D27A08A290041F6D4 /* flutterviewUITests.m */; };
 		76116E2027A08A290041F6D4 /* flutterviewUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76116E1F27A08A290041F6D4 /* flutterviewUITestsLaunchTests.m */; };
+		8FD298BA5C08C0D5D0212478 /* libPods-flutterview.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4001BB3CB9D6096B6E58761 /* libPods-flutterview.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C5A7D1DFF709565183B89F7 /* Pods-flutterview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flutterview.debug.xcconfig"; path = "Target Support Files/Pods-flutterview/Pods-flutterview.debug.xcconfig"; sourceTree = "<group>"; };
 		76116DF427A08A270041F6D4 /* flutterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flutterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76116DF727A08A270041F6D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		76116DF827A08A270041F6D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		76116E1927A08A290041F6D4 /* flutterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flutterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76116E1D27A08A290041F6D4 /* flutterviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flutterviewUITests.m; sourceTree = "<group>"; };
 		76116E1F27A08A290041F6D4 /* flutterviewUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = flutterviewUITestsLaunchTests.m; sourceTree = "<group>"; };
+		C59A3E3DB59560116196BAB4 /* Pods-flutterview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-flutterview.release.xcconfig"; path = "Target Support Files/Pods-flutterview/Pods-flutterview.release.xcconfig"; sourceTree = "<group>"; };
+		F4001BB3CB9D6096B6E58761 /* libPods-flutterview.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-flutterview.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD298BA5C08C0D5D0212478 /* libPods-flutterview.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E5495FDE7A2DC0EE6256938 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C5A7D1DFF709565183B89F7 /* Pods-flutterview.debug.xcconfig */,
+				C59A3E3DB59560116196BAB4 /* Pods-flutterview.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		76116DEB27A08A270041F6D4 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +103,8 @@
 				76116E1227A08A290041F6D4 /* flutterviewTests */,
 				76116E1C27A08A290041F6D4 /* flutterviewUITests */,
 				76116DF527A08A270041F6D4 /* Products */,
+				5E5495FDE7A2DC0EE6256938 /* Pods */,
+				810608EEA38F1449EFC4BF84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +153,14 @@
 			path = flutterviewUITests;
 			sourceTree = "<group>";
 		};
+		810608EEA38F1449EFC4BF84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4001BB3CB9D6096B6E58761 /* libPods-flutterview.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76116E2327A08A290041F6D4 /* Build configuration list for PBXNativeTarget "flutterview" */;
 			buildPhases = (
+				E306C26B22E07DB2A3B88205 /* [CP] Check Pods Manifest.lock */,
+				02FDFF4C8BD9D0B94D7A4697 /* [CP-User] Run Flutter Build ios_module Script */,
 				76116DF027A08A270041F6D4 /* Sources */,
 				76116DF127A08A270041F6D4 /* Frameworks */,
 				76116DF227A08A270041F6D4 /* Resources */,
+				24B658CB7BEA4B12A03C8820 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +288,58 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02FDFF4C8BD9D0B94D7A4697 /* [CP-User] Run Flutter Build ios_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build ios_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../ios_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		24B658CB7BEA4B12A03C8820 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flutterview/Pods-flutterview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-flutterview/Pods-flutterview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flutterview/Pods-flutterview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E306C26B22E07DB2A3B88205 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-flutterview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76116DF027A08A270041F6D4 /* Sources */ = {
@@ -439,6 +519,7 @@
 		};
 		76116E2427A08A290041F6D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5A7D1DFF709565183B89F7 /* Pods-flutterview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +547,7 @@
 		};
 		76116E2527A08A290041F6D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C59A3E3DB59560116196BAB4 /* Pods-flutterview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
